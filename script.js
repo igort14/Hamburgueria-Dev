@@ -137,7 +137,7 @@ addressInput.addEventListener("input", function (event) {
 // Finalizar pedido
 checkoutBtn.addEventListener("click", function(){
     // Verifica se está aberto o restaurante
-    const isOpen = checkRestOpen;
+    const isOpen = checkRestOpen();
     if (!isOpen) {
         
         Toastify({
